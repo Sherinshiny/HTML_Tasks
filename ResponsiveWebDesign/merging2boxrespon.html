@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Web Page</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #box{
+                height:600px;
+                width:100%;
+                border: 1px solid black;
+            }
+            #header{
+                height:100px;
+                width:100%;
+                border: 1px solid black;
+            }
+            #section{
+                height:400px;
+                width:100%;
+                border: 1px solid black;
+                background-color: gray;
+            }
+            #footer{
+                height:100px;
+                width:100%;
+                border: 1px solid black;
+            }
+            #leftheader{
+                height:100px;
+                width:30%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float: left;
+            }
+            #rightheader{
+                height:100px;
+                width:70%;
+                border: 1px solid black;
+                background-color: rgb(221, 217, 217);
+                float: left;
+            }
+            #leftfooter{
+                height:100%;
+                width:33.3%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            #middlefooter{
+                height:100%;
+                width:33.4%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            #rightfooter{
+                height:100%;
+                width:33.3%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            @media only screen and (max-width:400px){
+                #section{
+                    height:205px;
+                    width:100%;
+                }
+                #leftfooter{
+                height:100%;
+                width:100%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            #middlefooter{
+                height:100%;
+                width:100%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            #rightfooter{
+                height:100%;
+                width:100%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            }
+        
+        @media only screen and (min-width:400px) and (max-width:700px){
+            #section{
+                    height:50%;
+                    width:100%;
+                }
+                #leftfooter{
+                height:100%;
+                width:33.3%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            #middlefooter{
+                height:100%;
+                width:33.4%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+            #rightfooter{
+                height:100%;
+                width:33.3%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                float:left;
+            }
+             #box{
+                background-color:  rgb(221, 217, 217);
+             }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="header">
+                <div id="leftheader"></div>
+                <div id="rightheader"></div>
+            </div>
+            <div id="section"></div>
+            <div id="footer">
+                <div id="leftfooter"></div>
+                <div id="middlefooter"></div>
+                <div id="rightfooter"></div>
+
+            </div>
+        </div>
+    </body>
+</html>

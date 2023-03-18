@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive page design</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #box{
+                height:500px;
+                width:100%;
+                border:1px solid black;
+               
+            }
+            #header{
+                height:150px;
+                width:100%;
+                border:1px solid black;
+                background-color: palegreen;
+            }
+            #section{
+                height:300px;
+                width:100%;
+                border:1px solid black;
+            }
+            #footer{
+                height:50px;
+                width:100%;
+                border:1px solid black;
+                background-color: purple;
+            }
+            #left{
+                height:300px;
+                width:50%;
+                border:1px solid black;
+                float:left;
+
+            }
+            #right{
+                height:300px;
+                width:50%;
+                border:1px solid black;
+                float:left;
+                background-color: yellow;
+            }
+          #leftUp{
+                height:50%;
+                width:100%;
+                border:1px solid black;
+                background-color: blueviolet;
+            }
+            #leftDown{
+                height:50%;
+                width:100%;
+                border:1px solid black;
+                background-color: orangered;
+            } 
+            @media only screen and (max-width:400px){
+                #right{
+                display:none;
+            }
+            #left{
+                display: none;
+            } 
+            #section{
+                background-color: blueviolet;
+            }
+                
+            }
+
+            
+            @media only screen  and (min-width:400px) and (max-width:800px){
+                #right{
+                    height:100%;
+                    width:20%
+                }
+                #left{
+                height:100%;
+                width:80%;
+                border:1px solid black;
+                float:left;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id ="header"></div>
+            <div id="section">
+                <div id ="left">
+                    <div id = "leftUp"></div>
+                    <div id ="leftDown"></div>
+                </div>
+                <div id ="right"></div>
+            </div>
+            <div id ="footer"></div>
+        </div>
+    </body>
+</html>

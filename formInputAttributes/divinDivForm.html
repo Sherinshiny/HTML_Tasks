@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Div inDiv Form</title>
+        <style>
+            body{
+                background-color: rgb(234, 47, 147);
+            }
+            *{
+                box-sizing: border-box;
+            }
+            #box{
+                height:400px;
+                width:500px;
+                
+                background-color:hsl(330, 87%, 38%);
+                margin: auto;
+                margin-top: 20px;
+            }
+            table,td{
+                color:white;
+                padding:5px;
+                margin-left: 70px;
+            }
+            input[type=submit]{
+                
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 120px;
+                padding-right: 120px;
+               border:none;
+                text-align: center;
+                border-radius: 5px;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="innerBox">
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>  
+                             <td><input type="text" id="name"name="name"placeholder="Your Name " ></td>
+                            </tr>
+                            <tr>
+                             <td><label for="email">Email:</label></td>
+                            <td><input type="mail" id="email"name="email"placeholder="Your Email" ></td>
+                            </tr>
+                            <tr>
+                           <td> <label for="pwd">Password:</label></td>
+                           <td><input type="password" id="pwd"name="pwd" ></td>
+                           </tr>
+                           <tr>
+                            <td> <label for="gender">Gender:</label></td>
+                            <td> <label for="male">Male:</label>
+                            <input type="radio" id="male"name="male" >
+                            <label for="female">Female:</label>
+                            <input type="radio" id="female"name="female" >
+                            <label for="others">Others:</label>
+                            <input type="radio" id="others"name="others"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lang">Language:</label></td>
+                                <td><select id="lang" name="language">
+                                    <option value="Tamil">Tamil</option>
+                                    <option value="English">English</option>
+                                    <option value="SelectLanguage" selected>Select Language</option></td>
+                                </select>
+                            </tr>
+                                <tr>
+                                    <td><label  for="zip">Zip Code:</label></td>
+                                    <td><input type="text" id="zip" name="zip" pattern="[A-Za-z]{5}"></td>
+                                </tr>
+                                <tr>
+                                    <td><label  for="about">About :</label></td>
+                                    <td><textarea name="about" id="about"rows="5"cols="21" value="Write about yourself"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                   <input type="submit" value="Register"></td>
+                                </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

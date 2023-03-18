@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form in Div</title>
+        <style>
+            
+            #box{
+                height: 680px;
+                width:750px;
+               border:5px solid white
+            }
+            #top{
+                height: 50px;
+                width:100%;
+                background-color: orange;
+                color:gold;
+                border:1px solid white
+            }
+            #middle{
+                height:560px;
+                width:100%;
+                background-color: black;
+                border:1px solid white
+            }
+            #bottom{
+                height: 70px;                                                                                                                                                               
+                width:100%;
+                background-color: orange;
+                border:1px solid white
+            }
+            table,th,td{
+                padding:4px;
+                color:gold;
+            }
+            input{
+                border-radius: 5px;
+                padding:10px;
+            }
+            input[type=submit]{
+                background-color: palegreen;
+                margin-left:600px ;margin-top: 17px;
+            }
+            input[type=reset]{
+                background-color: red;
+            }
+           p{
+               padding-left: 10px; 
+               padding-top:15px ;
+            }
+            .align{
+            text-align: right;
+           }
+           #country{
+            width:612px;
+            height:40px;
+            border-radius: 5px;
+           }
+           #month{
+            width:250px;
+            height:40px;
+            border-radius: 5px;
+           }
+           #date{
+            width:150px;
+            height:40px;
+            border-radius: 5px;
+           }
+           #year{
+            width:205px;
+            height:40px;
+            border-radius: 5px;
+           }
+           
+            
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="top">
+                <p>Sign Up</p>
+            </div>
+            <div id="middle">
+                <form>
+                <table>
+                    <tr>
+                        
+                            <td><label for="fname"class="align">First Name</label></td>
+                            <td><input type="text" id="fname" name="fname" placeholder="Enter First Name"size="80" ></td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input type="text" id="lname" name="lname" placeholder="Enter Last Name"size="80" ></td>
+                    
+                </tr>
+                <tr>
+                        
+                    <td><label for="sname">Screen Name</label></td>
+                    <td><input type="text" id="sname" name="sname" placeholder="Enter Screen Name"size="80" ></td>
+                
+            </tr>
+            <tr>
+                        
+                <td><label for="dob">Date of Birth</label></td>
+                <td><select id="month" name="month"  >
+                    <option value="may" selected>May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="aug">Aug</option>
+                </select>
+
+                <select id="date" name="date"  >
+                    <option value="1" >1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="5"selected>5</option>
+                </select>
+                    
+                            <select id="year" name="year"  >
+                            <option value="1985" selected>1985</option>
+                            <option value="1988">1988</option>
+                            <option value="1986">1986</option>
+                            <option value="1987">1987</option>
+                        
+                    </td>
+            
+        </tr>
+        <tr>
+                        
+            <td><label >Gender</label></td>
+            <td><label for="male">Male</label>
+            <input type="radio" id="male" name="male"  >
+           <label for="female">Female</label>
+            <input type="radio" id="female" name="female"></td>
+
+        
+    </tr>
+    <tr>
+        <td><label for="country">Country</label></td>
+        <td><select id="country" name="country">
+            <option value="canada">canada</option>
+            <option value="america">america</option>
+            <option value="india">india</option>
+            <option value="usa" selected >USA</option>
+        </select></td>
+    </tr>
+    <tr>
+                        
+        <td><label for="email">Email</label></td>
+        <td><input type="mail" id="email" name="email" placeholder="Enter Email" size="80"></td>
+    
+</tr>
+<tr>
+                        
+    <td><label for="phone">Phone</label></td>
+    <td><input type="tel" id="phone" name="phone" placeholder="Enter Phone" pattern="[0-9]{10}"size="80"></td>
+
+</tr>
+<tr>
+                        
+    <td><label for="password">Password</label></td>
+    <td><input type="password" id="password" name="password"size="80"  ></td>
+
+</tr>
+<tr>
+                        
+    <td><label for="password">Confirm Password</label></td>
+    <td><input type="password" id="password" name="password" size="80" ></td>
+
+</tr>
+<th></th>
+<td>
+    <input type="checkbox"id="agree" name="agree" value="I agree to the Term of Use">
+    <label for="agree">I agree to the Term of Use</label>
+</td>
+  </table>
+            </form>
+            </div>
+            <div id="bottom">
+                <input type="submit">
+                <input type="reset" value="Cancel">
+            </div>
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+
+            table,th,td{
+                border:1px white;
+                border-collapse: collapse;
+                height:60px;
+                width: 1000px;
+                font-size:30px;
+                padding-top:40px;
+                font-size: 15px;
+                margin:auto;
+                font-family:sans-serif;
+            }
+            td{
+                text-align:center;
+            }
+            
+        

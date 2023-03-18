@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form on a image</title>
+        <style>
+            #box{
+                height:400px;
+                width:20%;
+                background-color: white;
+                float:right;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            li{
+                list-style-type: none;
+                padding:10px; 
+                font-size: 20px;
+            }
+            form{
+                margin-left: 10px;
+            }
+          
+            
+            body{
+                background-image: url("./place.jpg");background-size:cover;
+            }
+             input[type=submit]{
+                background-color: green;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 75px;
+                padding-right: 75px;
+                color:white;
+                text-align: center;
+                border:none;
+             }
+            h1{
+               margin-left: 40px;
+             }
+             #email{
+                border:none;
+               background-color: rgb(247, 240, 240);
+               height:50px;
+               width:300px;
+             }
+             #password{
+                border:none;
+               background-color: rgb(247, 240, 240);
+               height:50px;
+               width:300px;
+             }
+
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            
+            <form>
+                <h1>Login</h1>
+                <ul>
+                       <li> <label for="email">Email</label></li>
+                       <li> <input type="mail" id="email"name="email"placeholder="Enter Email" ></li>
+                       <li> <label for="password">Password</label></li>
+                       <li> <input type="password" id="password"name="password"placeholder="Enter password"></li>
+                       <li><input type="submit" value="login"></li>
+               </ul> 
+            </form>
+        </div>
+        
+    </body>
+
+</html>

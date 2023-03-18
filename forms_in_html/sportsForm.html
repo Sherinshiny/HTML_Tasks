@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Form</title>
+            <style>
+                table,th,td{
+                    padding:20px;
+                    font-size: 30px;
+                   
+                }
+                th{
+                    text-align: center;
+                }
+               body{
+                    font-size: 20px;
+                    background-color: gold;
+                }
+            </style>
+        
+    </head>
+    <body>
+        <h1>Registration Form For Sports</h1>
+        <form>
+            <table>
+                
+                <tr>
+            <th><label for = "name">First Name:</label></th>
+            <td><input type = "text" id = "name" name = "Name"></td>
+        </tr>
+        <tr>
+            <th><label for = "surname">Sur Name:</label></th>
+           <td> <input type = "text" id = "surname" name = "surName"></td>
+        </tr>
+       <tr>
+           <th> <label for = "dob" >Date of Birth:</label></th>
+           <td><input type ="number" id = "dob" name ="dOB"></td>
+        </tr>
+        <th><label for = "address">Address:</label></th>
+            <td><input type = "text" id = "address" name = "address"></td>
+        </tr>
+        <tr>
+            <th><label for = "mobileno" >Mobile Number:</label></th>
+            <td><input type ="tel" id = "mobileno" name ="mobileNumber" pattern = "[0-9]{10}"></td>
+        </tr>
+        <tr>
+            <th><label for = "mail" >Email Id:</label></th>
+            <td><input type ="email" id = "mail" name ="mailId"></td>
+        </tr>
+        <tr>
+            <th><label for = "zip">Zip:</label></th>
+           <td> <input type = "text" id = "zip" name = "zip"></td>
+        </tr>
+        
+        <tr>
+            <th></th>
+           <td> <input type="RESET"></td>
+        </tr>
+        </table>
+        </form>
+    </body>
+</html>

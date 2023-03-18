@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Form</title>
+        <style>
+            body{
+                background-image: url("bgimage.jfif");
+                background-size: cover;
+                color: white;
+            }
+            li{
+                list-style-type: none;
+                padding: 10px;
+            }
+            h1{
+                margin-left: 50px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Register Form</h1>
+        <form>
+            <ul>
+                <li>
+            <label for = "fname">First Name:</label>
+            <input type = "text" id = "fname" name = "firstName">
+        
+            <label for = "lname">Last Name:</label>
+           <input type = "text" id = "lname" name = "lasttName">
+        </li>
+            <li>
+                <label for = "mail" >Email Id:</label>
+                 <input type ="email" id = "mail" name ="mailId">
+             </li>
+
+             <li>
+                <label>Gender:</label>
+             <label for = "male">Male</label>
+            <input type = "radio" id = "male" name = "gender">
+            <label for = "female">Female</label>
+            <input type = "radio" id = "female" name = "gender">
+             </li>
+            <li>
+                <label for = "password" >Password:</label>
+            <input type ="tel" id = "password" name ="password" pattern = "[0-9]{10}">
+            </li>
+
+            <li>
+                <label for = "height" >Height:</label>
+           <input type ="number" id = "height" name ="height">
+            </li>
+
+            <li>
+                <label for = "dateTime" >Date and Time:</label>
+            <input type ="datetime-local" id = "dateTime" name ="dateandtime" >
+            </li>
+
+            <li>
+                <label for = "fav" >Select your favourite color:</label>
+               <input type ="color" id = "fav" name ="favcolor">
+            </li>
+
+                
+
+                <li>
+                    <label for = "mark" >Files:</label>
+                   <input type ="file" id = "mark" name ="files">
+                </li>
+                   
+
+                <li>
+                        <label for = "date" >Date:</label>
+                       <input type ="date" id = "date" name ="date">
+               </li>
+                  
+               
+               <li>
+                <label>Languages:</label>
+                 <label for = "lang1" >English:</label>
+                 <input type ="checkbox" id = "lang1" name ="english">
+                 <label for = "lang2" >Tamil:</label>
+                 <input type ="checkbox" id = "lang2" name ="tamil">
+                 <label for = "lang3" >Hindi:</label>
+                 <input type ="checkbox" id = "lang3" name ="english">
+                 <label for = "lang4" >Malayalam:</label>
+                 <input type ="checkbox" id = "lang4" name ="english">
+                 <label for = "lang5" >Telegu:</label>
+                 <input type ="checkbox" id = "lang5" name ="english">
+              </li>
+
+              <li>
+                <label for = "month" >Month:</label>
+               <input type ="month" id = "month" name ="month">
+                 </li>
+
+                 <li>
+                  <label for = "time" >Time:</label>
+                    <input type ="time" id = "time" name ="time">
+                </li>
+
+                <li>
+                    <label for = "week" >Week:</label>
+                      <input type ="week" id = "week" name ="week">
+                  </li>
+
+                  <li>
+                    <label for = "link" >Url:</label>
+                      <input type ="url" id = "link" name ="link">
+                  </li>
+
+                  <li>
+                    <label for = "search" >Search:</label>
+                      <input type ="search" id = "search" name ="search">
+                  </li>
+
+                  <li>
+                    <label for = "idnumber" >Id number:</label>
+                      <input type ="hidden" id = "idnumbe" name ="idnumbe">
+                  </li>
+
+                  <label for = "mobileno" >Telephone:</label>
+                  <input type ="tel" id = "mobileno" name ="mobileNumber" pattern = "[0-9]{10}">
+             <li>
+            
+        <li>
+            <label for = "volumerange" >Volumerange:</label>
+            <input type ="range" id = "mobileno" name ="volumerange" >
+        </li>
+        <input type="RESET">
+            <input type = "SUBMIT">
+           <input type ="image" src="./flower.jpg " height="50" width="50" alt="submit">
+        </ul>
+        </form>
+    </body>
+</html>

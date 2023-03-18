@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Form</title>
+            <style>
+                table,th,td{
+                    padding:20px;
+                    font-size: 30px;
+                    background-color: rgba(230, 226, 226, 0.905);
+                }
+                th{
+                    text-align: left;
+                }
+               body{
+                    font-size: 40px;
+                    background-color: rgba(230, 226, 226, 0.905);
+                }
+                
+            </style>
+        
+    </head>
+    <body>
+        <h1>HTML Form</h1>
+        <form>
+            <table>
+                
+                <tr>
+            <th><label for = "fname">First Name:</label></th>
+            <td><input type = "text" id = "fname" name = "firstName"></td>
+        </tr>
+        <tr>
+            <th><label for = "lname">Last Name:</label></th>
+           <td> <input type = "text" id = "lname" name = "lasttName"></td>
+        </tr>
+       <tr>
+           <th> <label for = "dob" >Date of Birth:</label></th>
+           <td><input type ="number" id = "dob" name ="dOB"></td>
+        </tr>
+        <tr>
+            <th><label for = "mail" >Email Id:</label></th>
+            <td><input type ="email" id = "mail" name ="mailId"></td>
+        </tr>
+        <tr>
+            <th><label for = "mobileno" >Mobile Number:</label></th>
+            <td><input type ="tel" id = "mobileno" name ="mobileNumber" pattern = "[0-9]{10}"></td>
+        </tr>
+        <tr>
+            <th><input type = "SUBMIT"></th>
+           <td> <input type="RESET"></td>
+        </tr>
+        </table>
+        </form>
+    </body>
+</html>

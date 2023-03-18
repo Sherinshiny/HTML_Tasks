@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration Form</title>
+        <style>
+            table,th,td{
+                        margin-left: 40px;
+                        text-align: left;
+                        background-color: aqua;
+                        padding:20px;
+            }
+            h1{
+                margin-left: 200px;
+            }
+           label,input{
+                font-size: 25px;
+              
+            }
+            input[type=submit]{
+                background-color: greenyellow;
+                color:aliceblue;
+                padding:10px;
+                border:none;
+            }
+            input[type=reset]{
+                background-color: slateblue;
+                color:aliceblue;
+                padding:10px;
+                border:none;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <h1><u>Project Management</u></h1>
+        <table>
+        <form id="#color">
+            <tr>
+            <th><label for="pname">Project Name</label></th>
+            <td><input type="Text"id="pname" name="projectName" value="project name" autofocus></td>
+        </tr>
+        <tr>
+            <th><label for="assign">Assigned to</label></th>
+            <td><select id="assign" name="assign">
+                <option value="Teacher">Teacher</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Er Merry Petision" selected>Er Merry Petision</option></td>
+            
+        </tr>
+        <tr>
+            <th><label for="password">PassWord</label></th>
+            <td><input type="Text"id="password" name="password" autofocus></td>
+        </tr>
+        <tr>
+            <th><label for="date">Start Date</label></th>
+            <td><input type="date"id="date" name="date"></td>
+        </tr>
+        <tr>
+            <th><label for="date">End Date</label></th>
+            <td><input type="date"id="date" name="date"></td>
+        </tr>
+        <tr>
+            <th><label>Priority</label></th>
+            <th><label for="high">High</label>
+            <input type="radio"id="high" name="high">
+            <label for="Average">Average</label>
+            <input type="radio"id="Average" name="Average">
+           <label for="low">Low</label>
+            <input type="radio"id="low" name="low"></th>
+        </tr>
+        
+       
+        <tr>
+           <th> <label for="description">Description</label></th>
+            <td><textarea name="description" id="description" rows="4" cols="20"></textarea></td>
+        </tr>
+        <tr>
+        <th><input type="submit" ></label></th>
+        <th><input type="reset" value="clear" ></label></th>
+    </tr>
+        </form>
+        </table>
+    </body>
+</html>

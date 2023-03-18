@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #box{
+                height:500px;
+                width:100%;
+                border:1px solid black;
+            }
+            #header{
+                height:100px;
+                width:100%;
+                border:1px solid black;
+                background-color: green;
+            }
+            #section{
+                height:300px;
+                width:100%;
+                border:1px solid black;
+                
+            }     
+            #footer{
+                height:100px;
+                width:100%;
+                border:1px solid black;
+                background-color: magenta;
+                
+            }
+             #leftPart{
+                height:100%;
+                width:80%;
+                border:1px solid black;
+                background-color: blue;
+                float: left;
+                
+             }    
+            #rightPart{
+                height:100%;
+                width:20%;
+                border:1px solid black;
+                background-color: gold;
+                float: left;
+                
+            }
+            @media only screen and (max-width:568px){
+                #leftPart{
+                height:80%;
+                width:100%;
+            }
+            #rightPart{
+                height:20%;
+                width:100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div id ="box">
+            <div id ="header"></div>
+            <div id ="section">
+                <div id ="leftPart"></div>
+                <div id ="rightPart"></div>
+            </div>
+            <div id ="footer"></div>
+
+        </div>
+    </body>
+</html>
